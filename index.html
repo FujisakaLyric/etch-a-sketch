@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <h1 class="header">Etch-a-Sketch</h1>
+        <div class="content">
+            <div class="settings">
+                <div class="input">
+                    <p>** Input any number from 1 to 100! **</p>
+                    <label for="guessField">Grid Size: </label>
+                    <input type="text" id="sizeInput" class="sizeInput">
+                    <button type="submit" class="sizeSubmit">Submit</button>
+                </div>
+                <button class="button toggle-grid">Toggle Grid Lines</button>
+                <button class="button reset">Clear Grid</button>
+                <button class="button black">Black Ink</button>
+                <button class="button rainbow">Rainbow Ink</button>    
+            </div>
+            <div class="container-grid"></div>
+        </div>
+    </body>
+</html>
