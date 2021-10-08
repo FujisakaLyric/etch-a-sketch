@@ -28,6 +28,7 @@ body {
 .settings {
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 30px;
 }
 
@@ -36,7 +37,7 @@ body {
 }
 
 .sizeInput {
-    padding: 5px 4px;
+    padding: 3px 4px;
     font-size: 16px;
 }
 
@@ -45,10 +46,23 @@ body {
     padding: 5px 16px;
 }
 
-.input p {
+.input p, .input label {
     margin-bottom: 16px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.button {
+    width: 300px;
+    padding: 5px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.button-selectable.selected {
+    color: white;
+    background-color: rgb(43, 43, 43);
+    border-color: white;
 }
 
 /* Grid */
@@ -60,4 +74,8 @@ body {
 .container-grid .grid {
     background-color: white;
     border: 1px solid rgb(156,156,156);
+}
+
+.container-grid .grid.transparent {
+    border: none;
 }
